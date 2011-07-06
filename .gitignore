@@ -9,3 +9,8 @@ profile
 *.iws
 *.ipr
 *.iml
+
+#eclipse noise
+.classpath
+.project
+.settings
