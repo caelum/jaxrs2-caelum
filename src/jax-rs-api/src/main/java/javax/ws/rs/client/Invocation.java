@@ -71,4 +71,5 @@ public interface Invocation extends HttpRequest<Invocation>, Configurable<Invoca
     <T> Future<T> queue(GenericType<T> responseType);
 
     <T> Future<T> queue(InvocationCallback<T> callback);
+    
 }

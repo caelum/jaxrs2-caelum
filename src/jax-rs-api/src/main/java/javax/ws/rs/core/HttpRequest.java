@@ -46,6 +46,8 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.client.ExtensionFactory;
+import javax.ws.rs.client.Invocation;
 
 /**
  * A mutable HTTP request.
@@ -77,6 +79,8 @@ public interface HttpRequest<T extends HttpRequest> extends HttpHeaders, Cloneab
         T options();
 
         T trace();
+
+        <I extends Invocation> I with(ExtensionFactory<I> extension);
 
         /**
          * Configures a HTTP request with an arbitrary HTTP method name.
