@@ -9,3 +9,8 @@ profile
 *.iws
 *.ipr
 *.iml
+
+.classpath
+.project
+.settings
+
